@@ -1,0 +1,241 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LED_Hr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Sec[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Sec[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Sec[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Sec[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Sec[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Sec[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Sec[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Sec[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ALARM",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Min2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LED_Hr2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Mode",
+					"strict" : false
+				},
+				{
+					"name" : "_1kHzIN",
+					"strict" : false
+				},
+				{
+					"name" : "Ctrl_Bell",
+					"strict" : false
+				},
+				{
+					"name" : "Set_Hr_key",
+					"strict" : false
+				},
+				{
+					"name" : "YYY",
+					"strict" : false
+				},
+				{
+					"name" : "Adj_Hour_key",
+					"strict" : false
+				},
+				{
+					"name" : "Set_Min_key",
+					"strict" : false
+				},
+				{
+					"name" : "Adj_Min_key",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

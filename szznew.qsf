@@ -1,0 +1,122 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+# Date created = 19:16:58  May 22, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		szznew_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE Auto
+set_global_assignment -name TOP_LEVEL_ENTITY szznew
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:16:58  MAY 22, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "16.1.2 Lite Edition"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name SEARCH_PATH common/devinfo/max7000s/
+set_global_assignment -name SEARCH_PATH common/devinfo/max7000b/
+set_global_assignment -name SEARCH_PATH common/devinfo/max7000ae/
+set_global_assignment -name SEARCH_PATH common/devinfo/max7000a/
+set_global_assignment -name SEARCH_PATH common/devinfo/max3000a/
+set_global_assignment -name SEARCH_PATH common/devinfo/stratixiv/
+set_global_assignment -name SEARCH_PATH common/devinfo/stratixiii/
+set_global_assignment -name SEARCH_PATH common/devinfo/hardcopyiii/
+set_global_assignment -name SEARCH_PATH common/devinfo/stratixiigx/
+set_global_assignment -name SEARCH_PATH common/devinfo/stratixii/
+set_global_assignment -name SEARCH_PATH common/devinfo/hardcopyii/
+set_global_assignment -name SEARCH_PATH common/devinfo/stratixgx/
+set_global_assignment -name SEARCH_PATH common/devinfo/stratix/
+set_global_assignment -name SEARCH_PATH common/devinfo/maxii/
+set_global_assignment -name SEARCH_PATH common/devinfo/cycloneivgx/
+set_global_assignment -name SEARCH_PATH common/devinfo/cycloneiii/
+set_global_assignment -name SEARCH_PATH common/devinfo/cycloneii/
+set_global_assignment -name SEARCH_PATH common/devinfo/cyclone/
+set_global_assignment -name SEARCH_PATH common/devinfo/arriaii/
+set_global_assignment -name SEARCH_PATH common/devinfo/arriagx/
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY "D:\\32bit\\szznew"
+set_global_assignment -name VERILOG_FILE szznew.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name VECTOR_WAVEFORM_FILE szznew.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE szznew.vwf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_J6 -to Mode
+set_location_assignment PIN_H5 -to Set_Hr_key
+set_location_assignment PIN_H6 -to Set_Min_key
+set_location_assignment PIN_G4 -to Adj_Hour_key
+set_location_assignment PIN_G5 -to Adj_Min_key
+set_location_assignment PIN_J7 -to Ctrl_Bell
+set_location_assignment PIN_G21 -to _1kHzIN
+set_location_assignment PIN_H1 -to ALARM
+set_global_assignment -name MISC_FILE "D:/32bit/szznew/szznew.dpf"
+set_location_assignment PIN_A13 -to LED_Min2[0]
+set_location_assignment PIN_B13 -to LED_Min2[1]
+set_location_assignment PIN_C13 -to LED_Min2[2]
+set_location_assignment PIN_A14 -to LED_Min2[3]
+set_location_assignment PIN_B14 -to LED_Min2[4]
+set_location_assignment PIN_E14 -to LED_Min2[5]
+set_location_assignment PIN_A15 -to LED_Min2[6]
+set_location_assignment PIN_E11 -to LED_Min1[0]
+set_location_assignment PIN_F11 -to LED_Min1[1]
+set_location_assignment PIN_H12 -to LED_Min1[2]
+set_location_assignment PIN_H13 -to LED_Min1[3]
+set_location_assignment PIN_G12 -to LED_Min1[4]
+set_location_assignment PIN_F12 -to LED_Min1[5]
+set_location_assignment PIN_F13 -to LED_Min1[6]
+set_location_assignment PIN_B18 -to LED_Hr2[0]
+set_location_assignment PIN_F15 -to LED_Hr2[1]
+set_location_assignment PIN_A19 -to LED_Hr2[2]
+set_location_assignment PIN_B19 -to LED_Hr2[3]
+set_location_assignment PIN_C19 -to LED_Hr2[4]
+set_location_assignment PIN_D19 -to LED_Hr2[5]
+set_location_assignment PIN_G15 -to LED_Hr2[6]
+set_location_assignment PIN_D15 -to LED_Hr1[0]
+set_location_assignment PIN_A16 -to LED_Hr1[1]
+set_location_assignment PIN_B16 -to LED_Hr1[2]
+set_location_assignment PIN_E15 -to LED_Hr1[3]
+set_location_assignment PIN_A17 -to LED_Hr1[4]
+set_location_assignment PIN_B17 -to LED_Hr1[5]
+set_location_assignment PIN_F14 -to LED_Hr1[6]
+set_global_assignment -name MISC_FILE "F:/szznew/szznew.dpf"
+set_location_assignment PIN_J2 -to LED_Sec[0]
+set_location_assignment PIN_D2 -to YYY
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

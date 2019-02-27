@@ -1,0 +1,869 @@
+Simulator report for szznew
+Thu May 25 08:57:18 2017
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 2000.0 s     ;
+; Simulation Netlist Size     ; 536 nodes    ;
+; Simulation Coverage         ;      68.47 % ;
+; Total Number of Transitions ; 61490935     ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; szznew.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      68.47 % ;
+; Total nodes checked                                 ; 536          ;
+; Total output ports checked                          ; 536          ;
+; Total output ports with complete 1/0-value coverage ; 367          ;
+; Total output ports with no 1/0-value coverage       ; 165          ;
+; Total output ports with no 1-value coverage         ; 167          ;
+; Total output ports with no 0-value coverage         ; 167          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                    ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |szznew|MinH_EN~1                            ; |szznew|MinH_EN~1                            ; out0             ;
+; |szznew|MinH_EN                              ; |szznew|MinH_EN                              ; out0             ;
+; |szznew|Hour_EN~0                            ; |szznew|Hour_EN~0                            ; out0             ;
+; |szznew|WideOr0                              ; |szznew|WideOr0                              ; out0             ;
+; |szznew|ALARM_Radio~0                        ; |szznew|ALARM_Radio~0                        ; out              ;
+; |szznew|ALARM_Radio                          ; |szznew|ALARM_Radio                          ; out              ;
+; |szznew|ALARM_Clock~0                        ; |szznew|ALARM_Clock~0                        ; out0             ;
+; |szznew|ALARM_Clock~1                        ; |szznew|ALARM_Clock~1                        ; out0             ;
+; |szznew|ALARM_Clock~2                        ; |szznew|ALARM_Clock~2                        ; out0             ;
+; |szznew|ALARM_Clock~3                        ; |szznew|ALARM_Clock~3                        ; out0             ;
+; |szznew|ALARM_Clock~4                        ; |szznew|ALARM_Clock~4                        ; out0             ;
+; |szznew|ALARM~0                              ; |szznew|ALARM~0                              ; out0             ;
+; |szznew|LED_Hr[0]                            ; |szznew|LED_Hr[0]                            ; pin_out          ;
+; |szznew|LED_Hr[1]                            ; |szznew|LED_Hr[1]                            ; pin_out          ;
+; |szznew|LED_Hr[2]                            ; |szznew|LED_Hr[2]                            ; pin_out          ;
+; |szznew|LED_Hr[3]                            ; |szznew|LED_Hr[3]                            ; pin_out          ;
+; |szznew|LED_Hr[4]                            ; |szznew|LED_Hr[4]                            ; pin_out          ;
+; |szznew|LED_Hr[5]                            ; |szznew|LED_Hr[5]                            ; pin_out          ;
+; |szznew|LED_Min[0]                           ; |szznew|LED_Min[0]                           ; pin_out          ;
+; |szznew|LED_Min[1]                           ; |szznew|LED_Min[1]                           ; pin_out          ;
+; |szznew|LED_Min[2]                           ; |szznew|LED_Min[2]                           ; pin_out          ;
+; |szznew|LED_Min[3]                           ; |szznew|LED_Min[3]                           ; pin_out          ;
+; |szznew|LED_Min[4]                           ; |szznew|LED_Min[4]                           ; pin_out          ;
+; |szznew|LED_Min[5]                           ; |szznew|LED_Min[5]                           ; pin_out          ;
+; |szznew|LED_Min[6]                           ; |szznew|LED_Min[6]                           ; pin_out          ;
+; |szznew|LED_Sec[0]                           ; |szznew|LED_Sec[0]                           ; pin_out          ;
+; |szznew|LED_Sec[1]                           ; |szznew|LED_Sec[1]                           ; pin_out          ;
+; |szznew|LED_Sec[2]                           ; |szznew|LED_Sec[2]                           ; pin_out          ;
+; |szznew|LED_Sec[3]                           ; |szznew|LED_Sec[3]                           ; pin_out          ;
+; |szznew|LED_Sec[4]                           ; |szznew|LED_Sec[4]                           ; pin_out          ;
+; |szznew|LED_Sec[5]                           ; |szznew|LED_Sec[5]                           ; pin_out          ;
+; |szznew|LED_Sec[6]                           ; |szznew|LED_Sec[6]                           ; pin_out          ;
+; |szznew|ALARM                                ; |szznew|ALARM                                ; pin_out          ;
+; |szznew|_1kHzIN                              ; |szznew|_1kHzIN                              ; out              ;
+; |szznew|LED_Min1[0]                          ; |szznew|LED_Min1[0]                          ; pin_out          ;
+; |szznew|LED_Min1[1]                          ; |szznew|LED_Min1[1]                          ; pin_out          ;
+; |szznew|LED_Min1[2]                          ; |szznew|LED_Min1[2]                          ; pin_out          ;
+; |szznew|LED_Min1[3]                          ; |szznew|LED_Min1[3]                          ; pin_out          ;
+; |szznew|LED_Min1[4]                          ; |szznew|LED_Min1[4]                          ; pin_out          ;
+; |szznew|LED_Min1[5]                          ; |szznew|LED_Min1[5]                          ; pin_out          ;
+; |szznew|LED_Min1[6]                          ; |szznew|LED_Min1[6]                          ; pin_out          ;
+; |szznew|LED_Min2[0]                          ; |szznew|LED_Min2[0]                          ; pin_out          ;
+; |szznew|LED_Min2[1]                          ; |szznew|LED_Min2[1]                          ; pin_out          ;
+; |szznew|LED_Min2[2]                          ; |szznew|LED_Min2[2]                          ; pin_out          ;
+; |szznew|LED_Min2[3]                          ; |szznew|LED_Min2[3]                          ; pin_out          ;
+; |szznew|LED_Min2[4]                          ; |szznew|LED_Min2[4]                          ; pin_out          ;
+; |szznew|LED_Min2[5]                          ; |szznew|LED_Min2[5]                          ; pin_out          ;
+; |szznew|LED_Min2[6]                          ; |szznew|LED_Min2[6]                          ; pin_out          ;
+; |szznew|LED_Hr1[0]                           ; |szznew|LED_Hr1[0]                           ; pin_out          ;
+; |szznew|LED_Hr1[1]                           ; |szznew|LED_Hr1[1]                           ; pin_out          ;
+; |szznew|LED_Hr1[2]                           ; |szznew|LED_Hr1[2]                           ; pin_out          ;
+; |szznew|LED_Hr1[3]                           ; |szznew|LED_Hr1[3]                           ; pin_out          ;
+; |szznew|LED_Hr1[4]                           ; |szznew|LED_Hr1[4]                           ; pin_out          ;
+; |szznew|LED_Hr1[5]                           ; |szznew|LED_Hr1[5]                           ; pin_out          ;
+; |szznew|LED_Hr1[6]                           ; |szznew|LED_Hr1[6]                           ; pin_out          ;
+; |szznew|LED_Hr2[0]                           ; |szznew|LED_Hr2[0]                           ; pin_out          ;
+; |szznew|LED_Hr2[2]                           ; |szznew|LED_Hr2[2]                           ; pin_out          ;
+; |szznew|LED_Hr2[3]                           ; |szznew|LED_Hr2[3]                           ; pin_out          ;
+; |szznew|LED_Hr2[4]                           ; |szznew|LED_Hr2[4]                           ; pin_out          ;
+; |szznew|LED_Hr2[5]                           ; |szznew|LED_Hr2[5]                           ; pin_out          ;
+; |szznew|LED_Hr2[6]                           ; |szznew|LED_Hr2[6]                           ; pin_out          ;
+; |szznew|Decoder:comb_64|WideOr0              ; |szznew|Decoder:comb_64|WideOr0              ; out0             ;
+; |szznew|Decoder:comb_64|WideOr1              ; |szznew|Decoder:comb_64|WideOr1              ; out0             ;
+; |szznew|Decoder:comb_64|WideOr2              ; |szznew|Decoder:comb_64|WideOr2              ; out0             ;
+; |szznew|Decoder:comb_64|WideOr3              ; |szznew|Decoder:comb_64|WideOr3              ; out0             ;
+; |szznew|Decoder:comb_64|WideOr5              ; |szznew|Decoder:comb_64|WideOr5              ; out0             ;
+; |szznew|Decoder:comb_63|WideOr0              ; |szznew|Decoder:comb_63|WideOr0              ; out0             ;
+; |szznew|Decoder:comb_63|WideOr1              ; |szznew|Decoder:comb_63|WideOr1              ; out0             ;
+; |szznew|Decoder:comb_63|WideOr2              ; |szznew|Decoder:comb_63|WideOr2              ; out0             ;
+; |szznew|Decoder:comb_63|WideOr3              ; |szznew|Decoder:comb_63|WideOr3              ; out0             ;
+; |szznew|Decoder:comb_63|WideOr4              ; |szznew|Decoder:comb_63|WideOr4              ; out0             ;
+; |szznew|Decoder:comb_63|WideOr5              ; |szznew|Decoder:comb_63|WideOr5              ; out0             ;
+; |szznew|Decoder:comb_62|WideOr0              ; |szznew|Decoder:comb_62|WideOr0              ; out0             ;
+; |szznew|Decoder:comb_62|WideOr1              ; |szznew|Decoder:comb_62|WideOr1              ; out0             ;
+; |szznew|Decoder:comb_62|WideOr2              ; |szznew|Decoder:comb_62|WideOr2              ; out0             ;
+; |szznew|Decoder:comb_62|WideOr3              ; |szznew|Decoder:comb_62|WideOr3              ; out0             ;
+; |szznew|Decoder:comb_62|WideOr4              ; |szznew|Decoder:comb_62|WideOr4              ; out0             ;
+; |szznew|Decoder:comb_62|WideOr5              ; |szznew|Decoder:comb_62|WideOr5              ; out0             ;
+; |szznew|Decoder:comb_61|WideOr0              ; |szznew|Decoder:comb_61|WideOr0              ; out0             ;
+; |szznew|Decoder:comb_61|WideOr1              ; |szznew|Decoder:comb_61|WideOr1              ; out0             ;
+; |szznew|Decoder:comb_61|WideOr2              ; |szznew|Decoder:comb_61|WideOr2              ; out0             ;
+; |szznew|Decoder:comb_61|WideOr3              ; |szznew|Decoder:comb_61|WideOr3              ; out0             ;
+; |szznew|Decoder:comb_61|WideOr4              ; |szznew|Decoder:comb_61|WideOr4              ; out0             ;
+; |szznew|Decoder:comb_61|WideOr5              ; |szznew|Decoder:comb_61|WideOr5              ; out0             ;
+; |szznew|_2to1MUX:MU3|OUT[6]                  ; |szznew|_2to1MUX:MU3|OUT[6]                  ; out              ;
+; |szznew|_2to1MUX:MU3|OUT[5]                  ; |szznew|_2to1MUX:MU3|OUT[5]                  ; out              ;
+; |szznew|_2to1MUX:MU3|OUT[4]                  ; |szznew|_2to1MUX:MU3|OUT[4]                  ; out              ;
+; |szznew|_2to1MUX:MU3|OUT[3]                  ; |szznew|_2to1MUX:MU3|OUT[3]                  ; out              ;
+; |szznew|_2to1MUX:MU3|OUT[2]                  ; |szznew|_2to1MUX:MU3|OUT[2]                  ; out              ;
+; |szznew|_2to1MUX:MU3|OUT[1]                  ; |szznew|_2to1MUX:MU3|OUT[1]                  ; out              ;
+; |szznew|_2to1MUX:MU3|OUT[0]                  ; |szznew|_2to1MUX:MU3|OUT[0]                  ; out              ;
+; |szznew|_2to1MUX:MU2|OUT[6]                  ; |szznew|_2to1MUX:MU2|OUT[6]                  ; out              ;
+; |szznew|_2to1MUX:MU2|OUT[5]                  ; |szznew|_2to1MUX:MU2|OUT[5]                  ; out              ;
+; |szznew|_2to1MUX:MU2|OUT[4]                  ; |szznew|_2to1MUX:MU2|OUT[4]                  ; out              ;
+; |szznew|_2to1MUX:MU2|OUT[3]                  ; |szznew|_2to1MUX:MU2|OUT[3]                  ; out              ;
+; |szznew|_2to1MUX:MU2|OUT[2]                  ; |szznew|_2to1MUX:MU2|OUT[2]                  ; out              ;
+; |szznew|_2to1MUX:MU2|OUT[1]                  ; |szznew|_2to1MUX:MU2|OUT[1]                  ; out              ;
+; |szznew|_2to1MUX:MU2|OUT[0]                  ; |szznew|_2to1MUX:MU2|OUT[0]                  ; out              ;
+; |szznew|_2to1MUX:MU1|OUT[5]                  ; |szznew|_2to1MUX:MU1|OUT[5]                  ; out              ;
+; |szznew|_2to1MUX:MU1|OUT[4]                  ; |szznew|_2to1MUX:MU1|OUT[4]                  ; out              ;
+; |szznew|_2to1MUX:MU1|OUT[3]                  ; |szznew|_2to1MUX:MU1|OUT[3]                  ; out              ;
+; |szznew|_2to1MUX:MU1|OUT[2]                  ; |szznew|_2to1MUX:MU1|OUT[2]                  ; out              ;
+; |szznew|_2to1MUX:MU1|OUT[1]                  ; |szznew|_2to1MUX:MU1|OUT[1]                  ; out              ;
+; |szznew|_2to1MUX:MU1|OUT[0]                  ; |szznew|_2to1MUX:MU1|OUT[0]                  ; out              ;
+; |szznew|counter24:SU3|always0~0              ; |szznew|counter24:SU3|always0~0              ; out0             ;
+; |szznew|counter24:SU3|always0~1              ; |szznew|counter24:SU3|always0~1              ; out0             ;
+; |szznew|counter24:SU3|always0~2              ; |szznew|counter24:SU3|always0~2              ; out0             ;
+; |szznew|counter24:SU3|CntL[0]                ; |szznew|counter24:SU3|CntL[0]                ; regout           ;
+; |szznew|counter24:SU3|always0~3              ; |szznew|counter24:SU3|always0~3              ; out0             ;
+; |szznew|counter24:SU3|CntH~2                 ; |szznew|counter24:SU3|CntH~2                 ; out              ;
+; |szznew|counter24:SU3|CntH~3                 ; |szznew|counter24:SU3|CntH~3                 ; out              ;
+; |szznew|counter24:SU3|CntL~0                 ; |szznew|counter24:SU3|CntL~0                 ; out              ;
+; |szznew|counter24:SU3|CntL~1                 ; |szznew|counter24:SU3|CntL~1                 ; out              ;
+; |szznew|counter24:SU3|CntL~2                 ; |szznew|counter24:SU3|CntL~2                 ; out              ;
+; |szznew|counter24:SU3|CntL~3                 ; |szznew|counter24:SU3|CntL~3                 ; out              ;
+; |szznew|counter24:SU3|CntH~6                 ; |szznew|counter24:SU3|CntH~6                 ; out              ;
+; |szznew|counter24:SU3|CntH~7                 ; |szznew|counter24:SU3|CntH~7                 ; out              ;
+; |szznew|counter24:SU3|CntL~4                 ; |szznew|counter24:SU3|CntL~4                 ; out              ;
+; |szznew|counter24:SU3|CntL~5                 ; |szznew|counter24:SU3|CntL~5                 ; out              ;
+; |szznew|counter24:SU3|CntL~6                 ; |szznew|counter24:SU3|CntL~6                 ; out              ;
+; |szznew|counter24:SU3|CntL~7                 ; |szznew|counter24:SU3|CntL~7                 ; out              ;
+; |szznew|counter24:SU3|CntH~10                ; |szznew|counter24:SU3|CntH~10                ; out              ;
+; |szznew|counter24:SU3|CntH~11                ; |szznew|counter24:SU3|CntH~11                ; out              ;
+; |szznew|counter24:SU3|CntL~8                 ; |szznew|counter24:SU3|CntL~8                 ; out              ;
+; |szznew|counter24:SU3|CntL~9                 ; |szznew|counter24:SU3|CntL~9                 ; out              ;
+; |szznew|counter24:SU3|CntL~10                ; |szznew|counter24:SU3|CntL~10                ; out              ;
+; |szznew|counter24:SU3|CntL~11                ; |szznew|counter24:SU3|CntL~11                ; out              ;
+; |szznew|counter24:SU3|CntH[1]                ; |szznew|counter24:SU3|CntH[1]                ; regout           ;
+; |szznew|counter24:SU3|CntH[0]                ; |szznew|counter24:SU3|CntH[0]                ; regout           ;
+; |szznew|counter24:SU3|CntL[3]                ; |szznew|counter24:SU3|CntL[3]                ; regout           ;
+; |szznew|counter24:SU3|CntL[2]                ; |szznew|counter24:SU3|CntL[2]                ; regout           ;
+; |szznew|counter24:SU3|CntL[1]                ; |szznew|counter24:SU3|CntL[1]                ; regout           ;
+; |szznew|counter6:SU2|Q[0]                    ; |szznew|counter6:SU2|Q[0]                    ; regout           ;
+; |szznew|counter6:SU2|Q~1                     ; |szznew|counter6:SU2|Q~1                     ; out              ;
+; |szznew|counter6:SU2|Q~2                     ; |szznew|counter6:SU2|Q~2                     ; out              ;
+; |szznew|counter6:SU2|Q~3                     ; |szznew|counter6:SU2|Q~3                     ; out              ;
+; |szznew|counter6:SU2|Q[2]                    ; |szznew|counter6:SU2|Q[2]                    ; regout           ;
+; |szznew|counter6:SU2|Q[1]                    ; |szznew|counter6:SU2|Q[1]                    ; regout           ;
+; |szznew|counter10:SU1|Q[0]                   ; |szznew|counter10:SU1|Q[0]                   ; regout           ;
+; |szznew|counter10:SU1|Q~0                    ; |szznew|counter10:SU1|Q~0                    ; out              ;
+; |szznew|counter10:SU1|Q~1                    ; |szznew|counter10:SU1|Q~1                    ; out              ;
+; |szznew|counter10:SU1|Q~2                    ; |szznew|counter10:SU1|Q~2                    ; out              ;
+; |szznew|counter10:SU1|Q~3                    ; |szznew|counter10:SU1|Q~3                    ; out              ;
+; |szznew|counter10:SU1|Q[3]                   ; |szznew|counter10:SU1|Q[3]                   ; regout           ;
+; |szznew|counter10:SU1|Q[2]                   ; |szznew|counter10:SU1|Q[2]                   ; regout           ;
+; |szznew|counter10:SU1|Q[1]                   ; |szznew|counter10:SU1|Q[1]                   ; regout           ;
+; |szznew|counter24:U5|always0~0               ; |szznew|counter24:U5|always0~0               ; out0             ;
+; |szznew|counter24:U5|always0~1               ; |szznew|counter24:U5|always0~1               ; out0             ;
+; |szznew|counter24:U5|always0~2               ; |szznew|counter24:U5|always0~2               ; out0             ;
+; |szznew|counter24:U5|CntL[0]                 ; |szznew|counter24:U5|CntL[0]                 ; regout           ;
+; |szznew|counter24:U5|always0~3               ; |szznew|counter24:U5|always0~3               ; out0             ;
+; |szznew|counter24:U5|CntH~2                  ; |szznew|counter24:U5|CntH~2                  ; out              ;
+; |szznew|counter24:U5|CntH~3                  ; |szznew|counter24:U5|CntH~3                  ; out              ;
+; |szznew|counter24:U5|CntL~0                  ; |szznew|counter24:U5|CntL~0                  ; out              ;
+; |szznew|counter24:U5|CntL~1                  ; |szznew|counter24:U5|CntL~1                  ; out              ;
+; |szznew|counter24:U5|CntL~2                  ; |szznew|counter24:U5|CntL~2                  ; out              ;
+; |szznew|counter24:U5|CntL~3                  ; |szznew|counter24:U5|CntL~3                  ; out              ;
+; |szznew|counter24:U5|CntH~6                  ; |szznew|counter24:U5|CntH~6                  ; out              ;
+; |szznew|counter24:U5|CntH~7                  ; |szznew|counter24:U5|CntH~7                  ; out              ;
+; |szznew|counter24:U5|CntL~4                  ; |szznew|counter24:U5|CntL~4                  ; out              ;
+; |szznew|counter24:U5|CntL~5                  ; |szznew|counter24:U5|CntL~5                  ; out              ;
+; |szznew|counter24:U5|CntL~6                  ; |szznew|counter24:U5|CntL~6                  ; out              ;
+; |szznew|counter24:U5|CntL~7                  ; |szznew|counter24:U5|CntL~7                  ; out              ;
+; |szznew|counter24:U5|CntH~10                 ; |szznew|counter24:U5|CntH~10                 ; out              ;
+; |szznew|counter24:U5|CntH~11                 ; |szznew|counter24:U5|CntH~11                 ; out              ;
+; |szznew|counter24:U5|CntL~8                  ; |szznew|counter24:U5|CntL~8                  ; out              ;
+; |szznew|counter24:U5|CntL~9                  ; |szznew|counter24:U5|CntL~9                  ; out              ;
+; |szznew|counter24:U5|CntL~10                 ; |szznew|counter24:U5|CntL~10                 ; out              ;
+; |szznew|counter24:U5|CntL~11                 ; |szznew|counter24:U5|CntL~11                 ; out              ;
+; |szznew|counter24:U5|CntH[1]                 ; |szznew|counter24:U5|CntH[1]                 ; regout           ;
+; |szznew|counter24:U5|CntH[0]                 ; |szznew|counter24:U5|CntH[0]                 ; regout           ;
+; |szznew|counter24:U5|CntL[3]                 ; |szznew|counter24:U5|CntL[3]                 ; regout           ;
+; |szznew|counter24:U5|CntL[2]                 ; |szznew|counter24:U5|CntL[2]                 ; regout           ;
+; |szznew|counter24:U5|CntL[1]                 ; |szznew|counter24:U5|CntL[1]                 ; regout           ;
+; |szznew|counter6:U4|Q[0]                     ; |szznew|counter6:U4|Q[0]                     ; regout           ;
+; |szznew|counter6:U4|Q~1                      ; |szznew|counter6:U4|Q~1                      ; out              ;
+; |szznew|counter6:U4|Q~2                      ; |szznew|counter6:U4|Q~2                      ; out              ;
+; |szznew|counter6:U4|Q~3                      ; |szznew|counter6:U4|Q~3                      ; out              ;
+; |szznew|counter6:U4|Q[2]                     ; |szznew|counter6:U4|Q[2]                     ; regout           ;
+; |szznew|counter6:U4|Q[1]                     ; |szznew|counter6:U4|Q[1]                     ; regout           ;
+; |szznew|counter10:U3|Q[0]                    ; |szznew|counter10:U3|Q[0]                    ; regout           ;
+; |szznew|counter10:U3|Q~0                     ; |szznew|counter10:U3|Q~0                     ; out              ;
+; |szznew|counter10:U3|Q~1                     ; |szznew|counter10:U3|Q~1                     ; out              ;
+; |szznew|counter10:U3|Q~2                     ; |szznew|counter10:U3|Q~2                     ; out              ;
+; |szznew|counter10:U3|Q~3                     ; |szznew|counter10:U3|Q~3                     ; out              ;
+; |szznew|counter10:U3|Q[3]                    ; |szznew|counter10:U3|Q[3]                    ; regout           ;
+; |szznew|counter10:U3|Q[2]                    ; |szznew|counter10:U3|Q[2]                    ; regout           ;
+; |szznew|counter10:U3|Q[1]                    ; |szznew|counter10:U3|Q[1]                    ; regout           ;
+; |szznew|counter6:U2|Q[0]                     ; |szznew|counter6:U2|Q[0]                     ; regout           ;
+; |szznew|counter6:U2|Q~1                      ; |szznew|counter6:U2|Q~1                      ; out              ;
+; |szznew|counter6:U2|Q~2                      ; |szznew|counter6:U2|Q~2                      ; out              ;
+; |szznew|counter6:U2|Q~3                      ; |szznew|counter6:U2|Q~3                      ; out              ;
+; |szznew|counter6:U2|Q[2]                     ; |szznew|counter6:U2|Q[2]                     ; regout           ;
+; |szznew|counter6:U2|Q[1]                     ; |szznew|counter6:U2|Q[1]                     ; regout           ;
+; |szznew|counter10:U1|Q[0]                    ; |szznew|counter10:U1|Q[0]                    ; regout           ;
+; |szznew|counter10:U1|Q~0                     ; |szznew|counter10:U1|Q~0                     ; out              ;
+; |szznew|counter10:U1|Q~1                     ; |szznew|counter10:U1|Q~1                     ; out              ;
+; |szznew|counter10:U1|Q~2                     ; |szznew|counter10:U1|Q~2                     ; out              ;
+; |szznew|counter10:U1|Q~3                     ; |szznew|counter10:U1|Q~3                     ; out              ;
+; |szznew|counter10:U1|Q[3]                    ; |szznew|counter10:U1|Q[3]                    ; regout           ;
+; |szznew|counter10:U1|Q[2]                    ; |szznew|counter10:U1|Q[2]                    ; regout           ;
+; |szznew|counter10:U1|Q[1]                    ; |szznew|counter10:U1|Q[1]                    ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[0] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[0] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~22 ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~22 ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~23 ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~23 ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~24 ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~24 ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|CLk_1HzOut   ; |szznew|Divier_50MHz_2Hz:comb_3|CLk_1HzOut   ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[2] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[2] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[1] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[1] ; regout           ;
+; |szznew|Decoder0~0                           ; |szznew|Decoder0~0                           ; out0             ;
+; |szznew|Decoder0~1                           ; |szznew|Decoder0~1                           ; out0             ;
+; |szznew|Decoder0~2                           ; |szznew|Decoder0~2                           ; out0             ;
+; |szznew|Decoder0~3                           ; |szznew|Decoder0~3                           ; out0             ;
+; |szznew|Decoder0~4                           ; |szznew|Decoder0~4                           ; out0             ;
+; |szznew|Decoder:comb_64|Decoder0~0           ; |szznew|Decoder:comb_64|Decoder0~0           ; out0             ;
+; |szznew|Decoder:comb_64|Decoder0~1           ; |szznew|Decoder:comb_64|Decoder0~1           ; out0             ;
+; |szznew|Decoder:comb_64|Decoder0~2           ; |szznew|Decoder:comb_64|Decoder0~2           ; out0             ;
+; |szznew|Decoder:comb_63|Decoder0~0           ; |szznew|Decoder:comb_63|Decoder0~0           ; out0             ;
+; |szznew|Decoder:comb_63|Decoder0~1           ; |szznew|Decoder:comb_63|Decoder0~1           ; out0             ;
+; |szznew|Decoder:comb_63|Decoder0~2           ; |szznew|Decoder:comb_63|Decoder0~2           ; out0             ;
+; |szznew|Decoder:comb_63|Decoder0~3           ; |szznew|Decoder:comb_63|Decoder0~3           ; out0             ;
+; |szznew|Decoder:comb_63|Decoder0~4           ; |szznew|Decoder:comb_63|Decoder0~4           ; out0             ;
+; |szznew|Decoder:comb_63|Decoder0~5           ; |szznew|Decoder:comb_63|Decoder0~5           ; out0             ;
+; |szznew|Decoder:comb_63|Decoder0~6           ; |szznew|Decoder:comb_63|Decoder0~6           ; out0             ;
+; |szznew|Decoder:comb_63|Decoder0~7           ; |szznew|Decoder:comb_63|Decoder0~7           ; out0             ;
+; |szznew|Decoder:comb_63|Decoder0~8           ; |szznew|Decoder:comb_63|Decoder0~8           ; out0             ;
+; |szznew|Decoder:comb_63|Decoder0~9           ; |szznew|Decoder:comb_63|Decoder0~9           ; out0             ;
+; |szznew|Decoder:comb_62|Decoder0~0           ; |szznew|Decoder:comb_62|Decoder0~0           ; out0             ;
+; |szznew|Decoder:comb_62|Decoder0~1           ; |szznew|Decoder:comb_62|Decoder0~1           ; out0             ;
+; |szznew|Decoder:comb_62|Decoder0~2           ; |szznew|Decoder:comb_62|Decoder0~2           ; out0             ;
+; |szznew|Decoder:comb_62|Decoder0~3           ; |szznew|Decoder:comb_62|Decoder0~3           ; out0             ;
+; |szznew|Decoder:comb_62|Decoder0~4           ; |szznew|Decoder:comb_62|Decoder0~4           ; out0             ;
+; |szznew|Decoder:comb_62|Decoder0~5           ; |szznew|Decoder:comb_62|Decoder0~5           ; out0             ;
+; |szznew|Decoder:comb_61|Decoder0~0           ; |szznew|Decoder:comb_61|Decoder0~0           ; out0             ;
+; |szznew|Decoder:comb_61|Decoder0~1           ; |szznew|Decoder:comb_61|Decoder0~1           ; out0             ;
+; |szznew|Decoder:comb_61|Decoder0~2           ; |szznew|Decoder:comb_61|Decoder0~2           ; out0             ;
+; |szznew|Decoder:comb_61|Decoder0~3           ; |szznew|Decoder:comb_61|Decoder0~3           ; out0             ;
+; |szznew|Decoder:comb_61|Decoder0~4           ; |szznew|Decoder:comb_61|Decoder0~4           ; out0             ;
+; |szznew|Decoder:comb_61|Decoder0~5           ; |szznew|Decoder:comb_61|Decoder0~5           ; out0             ;
+; |szznew|Decoder:comb_61|Decoder0~6           ; |szznew|Decoder:comb_61|Decoder0~6           ; out0             ;
+; |szznew|Decoder:comb_61|Decoder0~7           ; |szznew|Decoder:comb_61|Decoder0~7           ; out0             ;
+; |szznew|Decoder:comb_61|Decoder0~8           ; |szznew|Decoder:comb_61|Decoder0~8           ; out0             ;
+; |szznew|Decoder:comb_61|Decoder0~9           ; |szznew|Decoder:comb_61|Decoder0~9           ; out0             ;
+; |szznew|counter24:SU3|LessThan1~0            ; |szznew|counter24:SU3|LessThan1~0            ; out0             ;
+; |szznew|counter24:SU3|LessThan1~1            ; |szznew|counter24:SU3|LessThan1~1            ; out0             ;
+; |szznew|counter24:SU3|LessThan1~2            ; |szznew|counter24:SU3|LessThan1~2            ; out0             ;
+; |szznew|counter24:SU3|LessThan2~0            ; |szznew|counter24:SU3|LessThan2~0            ; out0             ;
+; |szznew|counter24:SU3|LessThan2~1            ; |szznew|counter24:SU3|LessThan2~1            ; out0             ;
+; |szznew|counter24:SU3|LessThan2~2            ; |szznew|counter24:SU3|LessThan2~2            ; out0             ;
+; |szznew|counter24:SU3|LessThan2~3            ; |szznew|counter24:SU3|LessThan2~3            ; out0             ;
+; |szznew|counter24:SU3|LessThan2~4            ; |szznew|counter24:SU3|LessThan2~4            ; out0             ;
+; |szznew|counter24:SU3|LessThan3~0            ; |szznew|counter24:SU3|LessThan3~0            ; out0             ;
+; |szznew|counter24:SU3|LessThan3~1            ; |szznew|counter24:SU3|LessThan3~1            ; out0             ;
+; |szznew|counter24:SU3|LessThan3~2            ; |szznew|counter24:SU3|LessThan3~2            ; out0             ;
+; |szznew|counter24:SU3|LessThan3~3            ; |szznew|counter24:SU3|LessThan3~3            ; out0             ;
+; |szznew|counter24:U5|LessThan1~0             ; |szznew|counter24:U5|LessThan1~0             ; out0             ;
+; |szznew|counter24:U5|LessThan1~1             ; |szznew|counter24:U5|LessThan1~1             ; out0             ;
+; |szznew|counter24:U5|LessThan1~2             ; |szznew|counter24:U5|LessThan1~2             ; out0             ;
+; |szznew|counter24:U5|LessThan2~0             ; |szznew|counter24:U5|LessThan2~0             ; out0             ;
+; |szznew|counter24:U5|LessThan2~1             ; |szznew|counter24:U5|LessThan2~1             ; out0             ;
+; |szznew|counter24:U5|LessThan2~2             ; |szznew|counter24:U5|LessThan2~2             ; out0             ;
+; |szznew|counter24:U5|LessThan2~3             ; |szznew|counter24:U5|LessThan2~3             ; out0             ;
+; |szznew|counter24:U5|LessThan2~4             ; |szznew|counter24:U5|LessThan2~4             ; out0             ;
+; |szznew|counter24:U5|LessThan3~0             ; |szznew|counter24:U5|LessThan3~0             ; out0             ;
+; |szznew|counter24:U5|LessThan3~1             ; |szznew|counter24:U5|LessThan3~1             ; out0             ;
+; |szznew|counter24:U5|LessThan3~2             ; |szznew|counter24:U5|LessThan3~2             ; out0             ;
+; |szznew|counter24:U5|LessThan3~3             ; |szznew|counter24:U5|LessThan3~3             ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~0  ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~0  ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~1  ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~1  ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~2  ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~2  ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~3  ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~3  ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~4  ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~4  ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~5  ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~5  ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~6  ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~6  ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~7  ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~7  ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~8  ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~8  ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~9  ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~9  ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~10 ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~10 ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~11 ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~11 ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~12 ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~12 ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~13 ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~13 ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~14 ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~14 ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~15 ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~15 ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~16 ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~16 ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~17 ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~17 ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~18 ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~18 ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~19 ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~19 ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~20 ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~20 ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~21 ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~21 ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~22 ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~22 ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~23 ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~23 ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~24 ; |szznew|Divier_50MHz_2Hz:comb_3|LessThan0~24 ; out0             ;
+; |szznew|counter24:SU3|Add0~0                 ; |szznew|counter24:SU3|Add0~0                 ; out0             ;
+; |szznew|counter24:SU3|Add1~0                 ; |szznew|counter24:SU3|Add1~0                 ; out0             ;
+; |szznew|counter24:SU3|Add1~1                 ; |szznew|counter24:SU3|Add1~1                 ; out0             ;
+; |szznew|counter24:SU3|Add1~2                 ; |szznew|counter24:SU3|Add1~2                 ; out0             ;
+; |szznew|counter24:SU3|Add1~3                 ; |szznew|counter24:SU3|Add1~3                 ; out0             ;
+; |szznew|counter24:SU3|Add1~4                 ; |szznew|counter24:SU3|Add1~4                 ; out0             ;
+; |szznew|counter6:SU2|Add0~0                  ; |szznew|counter6:SU2|Add0~0                  ; out0             ;
+; |szznew|counter6:SU2|Add0~1                  ; |szznew|counter6:SU2|Add0~1                  ; out0             ;
+; |szznew|counter6:SU2|Add0~2                  ; |szznew|counter6:SU2|Add0~2                  ; out0             ;
+; |szznew|counter10:SU1|Add0~0                 ; |szznew|counter10:SU1|Add0~0                 ; out0             ;
+; |szznew|counter10:SU1|Add0~1                 ; |szznew|counter10:SU1|Add0~1                 ; out0             ;
+; |szznew|counter10:SU1|Add0~2                 ; |szznew|counter10:SU1|Add0~2                 ; out0             ;
+; |szznew|counter10:SU1|Add0~3                 ; |szznew|counter10:SU1|Add0~3                 ; out0             ;
+; |szznew|counter10:SU1|Add0~4                 ; |szznew|counter10:SU1|Add0~4                 ; out0             ;
+; |szznew|counter24:U5|Add0~0                  ; |szznew|counter24:U5|Add0~0                  ; out0             ;
+; |szznew|counter24:U5|Add1~0                  ; |szznew|counter24:U5|Add1~0                  ; out0             ;
+; |szznew|counter24:U5|Add1~1                  ; |szznew|counter24:U5|Add1~1                  ; out0             ;
+; |szznew|counter24:U5|Add1~2                  ; |szznew|counter24:U5|Add1~2                  ; out0             ;
+; |szznew|counter24:U5|Add1~3                  ; |szznew|counter24:U5|Add1~3                  ; out0             ;
+; |szznew|counter24:U5|Add1~4                  ; |szznew|counter24:U5|Add1~4                  ; out0             ;
+; |szznew|counter6:U4|Add0~0                   ; |szznew|counter6:U4|Add0~0                   ; out0             ;
+; |szznew|counter6:U4|Add0~1                   ; |szznew|counter6:U4|Add0~1                   ; out0             ;
+; |szznew|counter6:U4|Add0~2                   ; |szznew|counter6:U4|Add0~2                   ; out0             ;
+; |szznew|counter10:U3|Add0~0                  ; |szznew|counter10:U3|Add0~0                  ; out0             ;
+; |szznew|counter10:U3|Add0~1                  ; |szznew|counter10:U3|Add0~1                  ; out0             ;
+; |szznew|counter10:U3|Add0~2                  ; |szznew|counter10:U3|Add0~2                  ; out0             ;
+; |szznew|counter10:U3|Add0~3                  ; |szznew|counter10:U3|Add0~3                  ; out0             ;
+; |szznew|counter10:U3|Add0~4                  ; |szznew|counter10:U3|Add0~4                  ; out0             ;
+; |szznew|counter6:U2|Add0~0                   ; |szznew|counter6:U2|Add0~0                   ; out0             ;
+; |szznew|counter6:U2|Add0~1                   ; |szznew|counter6:U2|Add0~1                   ; out0             ;
+; |szznew|counter6:U2|Add0~2                   ; |szznew|counter6:U2|Add0~2                   ; out0             ;
+; |szznew|counter10:U1|Add0~0                  ; |szznew|counter10:U1|Add0~0                  ; out0             ;
+; |szznew|counter10:U1|Add0~1                  ; |szznew|counter10:U1|Add0~1                  ; out0             ;
+; |szznew|counter10:U1|Add0~2                  ; |szznew|counter10:U1|Add0~2                  ; out0             ;
+; |szznew|counter10:U1|Add0~3                  ; |szznew|counter10:U1|Add0~3                  ; out0             ;
+; |szznew|counter10:U1|Add0~4                  ; |szznew|counter10:U1|Add0~4                  ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~0       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~0       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~1       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~1       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~2       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~2       ; out0             ;
+; |szznew|Equal0~0                             ; |szznew|Equal0~0                             ; out0             ;
+; |szznew|Equal1~0                             ; |szznew|Equal1~0                             ; out0             ;
+; |szznew|Equal2~0                             ; |szznew|Equal2~0                             ; out0             ;
+; |szznew|Equal3~0                             ; |szznew|Equal3~0                             ; out0             ;
+; |szznew|Equal4~0                             ; |szznew|Equal4~0                             ; out0             ;
+; |szznew|Equal5~0                             ; |szznew|Equal5~0                             ; out0             ;
+; |szznew|Equal6~0                             ; |szznew|Equal6~0                             ; out0             ;
+; |szznew|Equal7~0                             ; |szznew|Equal7~0                             ; out0             ;
+; |szznew|Equal8~0                             ; |szznew|Equal8~0                             ; out0             ;
+; |szznew|_4bitComparer:SU7|Equal0~0           ; |szznew|_4bitComparer:SU7|Equal0~0           ; out0             ;
+; |szznew|_4bitComparer:SU7|Equal0~1           ; |szznew|_4bitComparer:SU7|Equal0~1           ; out0             ;
+; |szznew|_4bitComparer:SU7|Equal0~2           ; |szznew|_4bitComparer:SU7|Equal0~2           ; out0             ;
+; |szznew|_4bitComparer:SU7|Equal0~3           ; |szznew|_4bitComparer:SU7|Equal0~3           ; out0             ;
+; |szznew|_4bitComparer:SU7|Equal0~4           ; |szznew|_4bitComparer:SU7|Equal0~4           ; out0             ;
+; |szznew|_4bitComparer:SU6|Equal0~0           ; |szznew|_4bitComparer:SU6|Equal0~0           ; out0             ;
+; |szznew|_4bitComparer:SU6|Equal0~1           ; |szznew|_4bitComparer:SU6|Equal0~1           ; out0             ;
+; |szznew|_4bitComparer:SU6|Equal0~2           ; |szznew|_4bitComparer:SU6|Equal0~2           ; out0             ;
+; |szznew|_4bitComparer:SU6|Equal0~4           ; |szznew|_4bitComparer:SU6|Equal0~4           ; out0             ;
+; |szznew|_4bitComparer:SU5|Equal0~0           ; |szznew|_4bitComparer:SU5|Equal0~0           ; out0             ;
+; |szznew|_4bitComparer:SU5|Equal0~1           ; |szznew|_4bitComparer:SU5|Equal0~1           ; out0             ;
+; |szznew|_4bitComparer:SU5|Equal0~2           ; |szznew|_4bitComparer:SU5|Equal0~2           ; out0             ;
+; |szznew|_4bitComparer:SU5|Equal0~3           ; |szznew|_4bitComparer:SU5|Equal0~3           ; out0             ;
+; |szznew|_4bitComparer:SU5|Equal0~4           ; |szznew|_4bitComparer:SU5|Equal0~4           ; out0             ;
+; |szznew|_4bitComparer:SU4|Equal0~0           ; |szznew|_4bitComparer:SU4|Equal0~0           ; out0             ;
+; |szznew|_4bitComparer:SU4|Equal0~1           ; |szznew|_4bitComparer:SU4|Equal0~1           ; out0             ;
+; |szznew|_4bitComparer:SU4|Equal0~4           ; |szznew|_4bitComparer:SU4|Equal0~4           ; out0             ;
+; |szznew|counter24:SU3|Equal0~0               ; |szznew|counter24:SU3|Equal0~0               ; out0             ;
+; |szznew|counter24:SU3|Equal1~0               ; |szznew|counter24:SU3|Equal1~0               ; out0             ;
+; |szznew|counter6:SU2|Equal0~0                ; |szznew|counter6:SU2|Equal0~0                ; out0             ;
+; |szznew|counter10:SU1|Equal0~0               ; |szznew|counter10:SU1|Equal0~0               ; out0             ;
+; |szznew|counter24:U5|Equal0~0                ; |szznew|counter24:U5|Equal0~0                ; out0             ;
+; |szznew|counter24:U5|Equal1~0                ; |szznew|counter24:U5|Equal1~0                ; out0             ;
+; |szznew|counter6:U4|Equal0~0                 ; |szznew|counter6:U4|Equal0~0                 ; out0             ;
+; |szznew|counter10:U3|Equal0~0                ; |szznew|counter10:U3|Equal0~0                ; out0             ;
+; |szznew|counter6:U2|Equal0~0                 ; |szznew|counter6:U2|Equal0~0                 ; out0             ;
+; |szznew|counter10:U1|Equal0~0                ; |szznew|counter10:U1|Equal0~0                ; out0             ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                         ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; Node Name                                     ; Output Port Name                              ; Output Port Type ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; |szznew|MinH_EN~0                             ; |szznew|MinH_EN~0                             ; out0             ;
+; |szznew|ALARM_Clock                           ; |szznew|ALARM_Clock                           ; out              ;
+; |szznew|LED_Hr[6]                             ; |szznew|LED_Hr[6]                             ; pin_out          ;
+; |szznew|LED_Hr[7]                             ; |szznew|LED_Hr[7]                             ; pin_out          ;
+; |szznew|LED_Min[7]                            ; |szznew|LED_Min[7]                            ; pin_out          ;
+; |szznew|LED_Sec[7]                            ; |szznew|LED_Sec[7]                            ; pin_out          ;
+; |szznew|Adj_Min_key                           ; |szznew|Adj_Min_key                           ; out              ;
+; |szznew|Adj_Hour_key                          ; |szznew|Adj_Hour_key                          ; out              ;
+; |szznew|Set_Min_key                           ; |szznew|Set_Min_key                           ; out              ;
+; |szznew|Set_Hr_key                            ; |szznew|Set_Hr_key                            ; out              ;
+; |szznew|Ctrl_Bell                             ; |szznew|Ctrl_Bell                             ; out              ;
+; |szznew|Mode                                  ; |szznew|Mode                                  ; out              ;
+; |szznew|LED_Hr2[1]                            ; |szznew|LED_Hr2[1]                            ; pin_out          ;
+; |szznew|YYY                                   ; |szznew|YYY                                   ; out              ;
+; |szznew|Decoder:comb_64|WideOr4               ; |szznew|Decoder:comb_64|WideOr4               ; out0             ;
+; |szznew|_2to1MUX:MU3|OUT[7]                   ; |szznew|_2to1MUX:MU3|OUT[7]                   ; out              ;
+; |szznew|_2to1MUX:MU2|OUT[7]                   ; |szznew|_2to1MUX:MU2|OUT[7]                   ; out              ;
+; |szznew|_2to1MUX:MU1|OUT[7]                   ; |szznew|_2to1MUX:MU1|OUT[7]                   ; out              ;
+; |szznew|_2to1MUX:MU1|OUT[6]                   ; |szznew|_2to1MUX:MU1|OUT[6]                   ; out              ;
+; |szznew|counter24:SU3|CntH~0                  ; |szznew|counter24:SU3|CntH~0                  ; out              ;
+; |szznew|counter24:SU3|CntH~1                  ; |szznew|counter24:SU3|CntH~1                  ; out              ;
+; |szznew|counter24:SU3|CntH~4                  ; |szznew|counter24:SU3|CntH~4                  ; out              ;
+; |szznew|counter24:SU3|CntH~5                  ; |szznew|counter24:SU3|CntH~5                  ; out              ;
+; |szznew|counter24:SU3|CntH~8                  ; |szznew|counter24:SU3|CntH~8                  ; out              ;
+; |szznew|counter24:SU3|CntH~9                  ; |szznew|counter24:SU3|CntH~9                  ; out              ;
+; |szznew|counter24:SU3|CntH[3]                 ; |szznew|counter24:SU3|CntH[3]                 ; regout           ;
+; |szznew|counter24:SU3|CntH[2]                 ; |szznew|counter24:SU3|CntH[2]                 ; regout           ;
+; |szznew|counter6:SU2|Q~0                      ; |szznew|counter6:SU2|Q~0                      ; out              ;
+; |szznew|counter6:SU2|Q[3]                     ; |szznew|counter6:SU2|Q[3]                     ; regout           ;
+; |szznew|counter24:U5|CntH~0                   ; |szznew|counter24:U5|CntH~0                   ; out              ;
+; |szznew|counter24:U5|CntH~1                   ; |szznew|counter24:U5|CntH~1                   ; out              ;
+; |szznew|counter24:U5|CntH~4                   ; |szznew|counter24:U5|CntH~4                   ; out              ;
+; |szznew|counter24:U5|CntH~5                   ; |szznew|counter24:U5|CntH~5                   ; out              ;
+; |szznew|counter24:U5|CntH~8                   ; |szznew|counter24:U5|CntH~8                   ; out              ;
+; |szznew|counter24:U5|CntH~9                   ; |szznew|counter24:U5|CntH~9                   ; out              ;
+; |szznew|counter24:U5|CntH[3]                  ; |szznew|counter24:U5|CntH[3]                  ; regout           ;
+; |szznew|counter24:U5|CntH[2]                  ; |szznew|counter24:U5|CntH[2]                  ; regout           ;
+; |szznew|counter6:U4|Q~0                       ; |szznew|counter6:U4|Q~0                       ; out              ;
+; |szznew|counter6:U4|Q[3]                      ; |szznew|counter6:U4|Q[3]                      ; regout           ;
+; |szznew|counter6:U2|Q~0                       ; |szznew|counter6:U2|Q~0                       ; out              ;
+; |szznew|counter6:U2|Q[3]                      ; |szznew|counter6:U2|Q[3]                      ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~0   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~0   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~1   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~1   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~2   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~2   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~3   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~3   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~4   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~4   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~5   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~5   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~6   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~6   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~7   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~7   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~8   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~8   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~9   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~9   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~10  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~10  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~11  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~11  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~12  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~12  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~13  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~13  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~14  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~14  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~15  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~15  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~16  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~16  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~17  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~17  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~18  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~18  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~19  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~19  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~20  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~20  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~21  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~21  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[24] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[24] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[23] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[23] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[22] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[22] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[21] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[21] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[20] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[20] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[19] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[19] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[18] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[18] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[17] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[17] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[16] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[16] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[15] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[15] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[14] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[14] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[13] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[13] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[12] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[12] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[11] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[11] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[10] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[10] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[9]  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[9]  ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[8]  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[8]  ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[7]  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[7]  ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[6]  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[6]  ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[5]  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[5]  ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[4]  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[4]  ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[3]  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[3]  ; regout           ;
+; |szznew|Decoder:comb_64|Decoder0~3            ; |szznew|Decoder:comb_64|Decoder0~3            ; out0             ;
+; |szznew|Decoder:comb_64|Decoder0~4            ; |szznew|Decoder:comb_64|Decoder0~4            ; out0             ;
+; |szznew|Decoder:comb_64|Decoder0~5            ; |szznew|Decoder:comb_64|Decoder0~5            ; out0             ;
+; |szznew|Decoder:comb_64|Decoder0~6            ; |szznew|Decoder:comb_64|Decoder0~6            ; out0             ;
+; |szznew|Decoder:comb_64|Decoder0~7            ; |szznew|Decoder:comb_64|Decoder0~7            ; out0             ;
+; |szznew|Decoder:comb_64|Decoder0~8            ; |szznew|Decoder:comb_64|Decoder0~8            ; out0             ;
+; |szznew|Decoder:comb_64|Decoder0~9            ; |szznew|Decoder:comb_64|Decoder0~9            ; out0             ;
+; |szznew|Decoder:comb_62|Decoder0~6            ; |szznew|Decoder:comb_62|Decoder0~6            ; out0             ;
+; |szznew|Decoder:comb_62|Decoder0~7            ; |szznew|Decoder:comb_62|Decoder0~7            ; out0             ;
+; |szznew|Decoder:comb_62|Decoder0~8            ; |szznew|Decoder:comb_62|Decoder0~8            ; out0             ;
+; |szznew|Decoder:comb_62|Decoder0~9            ; |szznew|Decoder:comb_62|Decoder0~9            ; out0             ;
+; |szznew|counter24:SU3|LessThan0~0             ; |szznew|counter24:SU3|LessThan0~0             ; out0             ;
+; |szznew|counter24:SU3|LessThan0~1             ; |szznew|counter24:SU3|LessThan0~1             ; out0             ;
+; |szznew|counter24:SU3|LessThan0~2             ; |szznew|counter24:SU3|LessThan0~2             ; out0             ;
+; |szznew|counter24:SU3|LessThan0~3             ; |szznew|counter24:SU3|LessThan0~3             ; out0             ;
+; |szznew|counter24:SU3|LessThan0~4             ; |szznew|counter24:SU3|LessThan0~4             ; out0             ;
+; |szznew|counter24:U5|LessThan0~0              ; |szznew|counter24:U5|LessThan0~0              ; out0             ;
+; |szznew|counter24:U5|LessThan0~1              ; |szznew|counter24:U5|LessThan0~1              ; out0             ;
+; |szznew|counter24:U5|LessThan0~2              ; |szznew|counter24:U5|LessThan0~2              ; out0             ;
+; |szznew|counter24:U5|LessThan0~3              ; |szznew|counter24:U5|LessThan0~3              ; out0             ;
+; |szznew|counter24:U5|LessThan0~4              ; |szznew|counter24:U5|LessThan0~4              ; out0             ;
+; |szznew|counter24:SU3|Add0~1                  ; |szznew|counter24:SU3|Add0~1                  ; out0             ;
+; |szznew|counter24:SU3|Add0~2                  ; |szznew|counter24:SU3|Add0~2                  ; out0             ;
+; |szznew|counter24:SU3|Add0~3                  ; |szznew|counter24:SU3|Add0~3                  ; out0             ;
+; |szznew|counter24:SU3|Add0~4                  ; |szznew|counter24:SU3|Add0~4                  ; out0             ;
+; |szznew|counter6:SU2|Add0~3                   ; |szznew|counter6:SU2|Add0~3                   ; out0             ;
+; |szznew|counter6:SU2|Add0~4                   ; |szznew|counter6:SU2|Add0~4                   ; out0             ;
+; |szznew|counter24:U5|Add0~1                   ; |szznew|counter24:U5|Add0~1                   ; out0             ;
+; |szznew|counter24:U5|Add0~2                   ; |szznew|counter24:U5|Add0~2                   ; out0             ;
+; |szznew|counter24:U5|Add0~3                   ; |szznew|counter24:U5|Add0~3                   ; out0             ;
+; |szznew|counter24:U5|Add0~4                   ; |szznew|counter24:U5|Add0~4                   ; out0             ;
+; |szznew|counter6:U4|Add0~3                    ; |szznew|counter6:U4|Add0~3                    ; out0             ;
+; |szznew|counter6:U4|Add0~4                    ; |szznew|counter6:U4|Add0~4                    ; out0             ;
+; |szznew|counter6:U2|Add0~3                    ; |szznew|counter6:U2|Add0~3                    ; out0             ;
+; |szznew|counter6:U2|Add0~4                    ; |szznew|counter6:U2|Add0~4                    ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~3        ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~3        ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~4        ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~4        ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~5        ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~5        ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~6        ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~6        ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~7        ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~7        ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~8        ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~8        ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~9        ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~9        ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~10       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~10       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~11       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~11       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~12       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~12       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~13       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~13       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~14       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~14       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~15       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~15       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~16       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~16       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~17       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~17       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~18       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~18       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~19       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~19       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~20       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~20       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~21       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~21       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~22       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~22       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~23       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~23       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~24       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~24       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~25       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~25       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~26       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~26       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~27       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~27       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~28       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~28       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~29       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~29       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~30       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~30       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~31       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~31       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~32       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~32       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~33       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~33       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~34       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~34       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~35       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~35       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~36       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~36       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~37       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~37       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~38       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~38       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~39       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~39       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~40       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~40       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~41       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~41       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~42       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~42       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~43       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~43       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~44       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~44       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~45       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~45       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~46       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~46       ; out0             ;
+; |szznew|_4bitComparer:SU6|Equal0~3            ; |szznew|_4bitComparer:SU6|Equal0~3            ; out0             ;
+; |szznew|_4bitComparer:SU4|Equal0~2            ; |szznew|_4bitComparer:SU4|Equal0~2            ; out0             ;
+; |szznew|_4bitComparer:SU4|Equal0~3            ; |szznew|_4bitComparer:SU4|Equal0~3            ; out0             ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                         ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; Node Name                                     ; Output Port Name                              ; Output Port Type ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; |szznew|MinL_EN                               ; |szznew|MinL_EN                               ; out              ;
+; |szznew|Hour_EN                               ; |szznew|Hour_EN                               ; out              ;
+; |szznew|LED_Hr[6]                             ; |szznew|LED_Hr[6]                             ; pin_out          ;
+; |szznew|LED_Hr[7]                             ; |szznew|LED_Hr[7]                             ; pin_out          ;
+; |szznew|LED_Min[7]                            ; |szznew|LED_Min[7]                            ; pin_out          ;
+; |szznew|LED_Sec[7]                            ; |szznew|LED_Sec[7]                            ; pin_out          ;
+; |szznew|Adj_Min_key                           ; |szznew|Adj_Min_key                           ; out              ;
+; |szznew|Adj_Hour_key                          ; |szznew|Adj_Hour_key                          ; out              ;
+; |szznew|Set_Min_key                           ; |szznew|Set_Min_key                           ; out              ;
+; |szznew|Set_Hr_key                            ; |szznew|Set_Hr_key                            ; out              ;
+; |szznew|Ctrl_Bell                             ; |szznew|Ctrl_Bell                             ; out              ;
+; |szznew|Mode                                  ; |szznew|Mode                                  ; out              ;
+; |szznew|LED_Hr2[1]                            ; |szznew|LED_Hr2[1]                            ; pin_out          ;
+; |szznew|YYY                                   ; |szznew|YYY                                   ; out              ;
+; |szznew|Decoder:comb_64|WideOr4               ; |szznew|Decoder:comb_64|WideOr4               ; out0             ;
+; |szznew|_2to1MUX:MU3|OUT[7]                   ; |szznew|_2to1MUX:MU3|OUT[7]                   ; out              ;
+; |szznew|_2to1MUX:MU2|OUT[7]                   ; |szznew|_2to1MUX:MU2|OUT[7]                   ; out              ;
+; |szznew|_2to1MUX:MU1|OUT[7]                   ; |szznew|_2to1MUX:MU1|OUT[7]                   ; out              ;
+; |szznew|_2to1MUX:MU1|OUT[6]                   ; |szznew|_2to1MUX:MU1|OUT[6]                   ; out              ;
+; |szznew|counter24:SU3|CntH~0                  ; |szznew|counter24:SU3|CntH~0                  ; out              ;
+; |szznew|counter24:SU3|CntH~1                  ; |szznew|counter24:SU3|CntH~1                  ; out              ;
+; |szznew|counter24:SU3|CntH~4                  ; |szznew|counter24:SU3|CntH~4                  ; out              ;
+; |szznew|counter24:SU3|CntH~5                  ; |szznew|counter24:SU3|CntH~5                  ; out              ;
+; |szznew|counter24:SU3|CntH~8                  ; |szznew|counter24:SU3|CntH~8                  ; out              ;
+; |szznew|counter24:SU3|CntH~9                  ; |szznew|counter24:SU3|CntH~9                  ; out              ;
+; |szznew|counter24:SU3|CntH[3]                 ; |szznew|counter24:SU3|CntH[3]                 ; regout           ;
+; |szznew|counter24:SU3|CntH[2]                 ; |szznew|counter24:SU3|CntH[2]                 ; regout           ;
+; |szznew|counter6:SU2|Q~0                      ; |szznew|counter6:SU2|Q~0                      ; out              ;
+; |szznew|counter6:SU2|Q[3]                     ; |szznew|counter6:SU2|Q[3]                     ; regout           ;
+; |szznew|counter24:U5|CntH~0                   ; |szznew|counter24:U5|CntH~0                   ; out              ;
+; |szznew|counter24:U5|CntH~1                   ; |szznew|counter24:U5|CntH~1                   ; out              ;
+; |szznew|counter24:U5|CntH~4                   ; |szznew|counter24:U5|CntH~4                   ; out              ;
+; |szznew|counter24:U5|CntH~5                   ; |szznew|counter24:U5|CntH~5                   ; out              ;
+; |szznew|counter24:U5|CntH~8                   ; |szznew|counter24:U5|CntH~8                   ; out              ;
+; |szznew|counter24:U5|CntH~9                   ; |szznew|counter24:U5|CntH~9                   ; out              ;
+; |szznew|counter24:U5|CntH[3]                  ; |szznew|counter24:U5|CntH[3]                  ; regout           ;
+; |szznew|counter24:U5|CntH[2]                  ; |szznew|counter24:U5|CntH[2]                  ; regout           ;
+; |szznew|counter6:U4|Q~0                       ; |szznew|counter6:U4|Q~0                       ; out              ;
+; |szznew|counter6:U4|Q[3]                      ; |szznew|counter6:U4|Q[3]                      ; regout           ;
+; |szznew|counter6:U2|Q~0                       ; |szznew|counter6:U2|Q~0                       ; out              ;
+; |szznew|counter6:U2|Q[3]                      ; |szznew|counter6:U2|Q[3]                      ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~0   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~0   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~1   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~1   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~2   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~2   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~3   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~3   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~4   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~4   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~5   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~5   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~6   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~6   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~7   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~7   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~8   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~8   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~9   ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~9   ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~10  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~10  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~11  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~11  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~12  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~12  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~13  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~13  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~14  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~14  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~15  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~15  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~16  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~16  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~17  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~17  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~18  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~18  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~19  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~19  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~20  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~20  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~21  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div~21  ; out              ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[24] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[24] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[23] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[23] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[22] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[22] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[21] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[21] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[20] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[20] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[19] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[19] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[18] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[18] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[17] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[17] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[16] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[16] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[15] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[15] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[14] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[14] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[13] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[13] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[12] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[12] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[11] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[11] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[10] ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[10] ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[9]  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[9]  ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[8]  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[8]  ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[7]  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[7]  ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[6]  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[6]  ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[5]  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[5]  ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[4]  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[4]  ; regout           ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[3]  ; |szznew|Divier_50MHz_2Hz:comb_3|Count_Div[3]  ; regout           ;
+; |szznew|Decoder:comb_64|Decoder0~3            ; |szznew|Decoder:comb_64|Decoder0~3            ; out0             ;
+; |szznew|Decoder:comb_64|Decoder0~4            ; |szznew|Decoder:comb_64|Decoder0~4            ; out0             ;
+; |szznew|Decoder:comb_64|Decoder0~5            ; |szznew|Decoder:comb_64|Decoder0~5            ; out0             ;
+; |szznew|Decoder:comb_64|Decoder0~6            ; |szznew|Decoder:comb_64|Decoder0~6            ; out0             ;
+; |szznew|Decoder:comb_64|Decoder0~7            ; |szznew|Decoder:comb_64|Decoder0~7            ; out0             ;
+; |szznew|Decoder:comb_64|Decoder0~8            ; |szznew|Decoder:comb_64|Decoder0~8            ; out0             ;
+; |szznew|Decoder:comb_64|Decoder0~9            ; |szznew|Decoder:comb_64|Decoder0~9            ; out0             ;
+; |szznew|Decoder:comb_62|Decoder0~6            ; |szznew|Decoder:comb_62|Decoder0~6            ; out0             ;
+; |szznew|Decoder:comb_62|Decoder0~7            ; |szznew|Decoder:comb_62|Decoder0~7            ; out0             ;
+; |szznew|Decoder:comb_62|Decoder0~8            ; |szznew|Decoder:comb_62|Decoder0~8            ; out0             ;
+; |szznew|Decoder:comb_62|Decoder0~9            ; |szznew|Decoder:comb_62|Decoder0~9            ; out0             ;
+; |szznew|counter24:SU3|LessThan0~0             ; |szznew|counter24:SU3|LessThan0~0             ; out0             ;
+; |szznew|counter24:SU3|LessThan0~1             ; |szznew|counter24:SU3|LessThan0~1             ; out0             ;
+; |szznew|counter24:SU3|LessThan0~2             ; |szznew|counter24:SU3|LessThan0~2             ; out0             ;
+; |szznew|counter24:SU3|LessThan0~3             ; |szznew|counter24:SU3|LessThan0~3             ; out0             ;
+; |szznew|counter24:SU3|LessThan0~4             ; |szznew|counter24:SU3|LessThan0~4             ; out0             ;
+; |szznew|counter24:U5|LessThan0~0              ; |szznew|counter24:U5|LessThan0~0              ; out0             ;
+; |szznew|counter24:U5|LessThan0~1              ; |szznew|counter24:U5|LessThan0~1              ; out0             ;
+; |szznew|counter24:U5|LessThan0~2              ; |szznew|counter24:U5|LessThan0~2              ; out0             ;
+; |szznew|counter24:U5|LessThan0~3              ; |szznew|counter24:U5|LessThan0~3              ; out0             ;
+; |szznew|counter24:U5|LessThan0~4              ; |szznew|counter24:U5|LessThan0~4              ; out0             ;
+; |szznew|counter24:SU3|Add0~1                  ; |szznew|counter24:SU3|Add0~1                  ; out0             ;
+; |szznew|counter24:SU3|Add0~2                  ; |szznew|counter24:SU3|Add0~2                  ; out0             ;
+; |szznew|counter24:SU3|Add0~3                  ; |szznew|counter24:SU3|Add0~3                  ; out0             ;
+; |szznew|counter24:SU3|Add0~4                  ; |szznew|counter24:SU3|Add0~4                  ; out0             ;
+; |szznew|counter6:SU2|Add0~3                   ; |szznew|counter6:SU2|Add0~3                   ; out0             ;
+; |szznew|counter6:SU2|Add0~4                   ; |szznew|counter6:SU2|Add0~4                   ; out0             ;
+; |szznew|counter24:U5|Add0~1                   ; |szznew|counter24:U5|Add0~1                   ; out0             ;
+; |szznew|counter24:U5|Add0~2                   ; |szznew|counter24:U5|Add0~2                   ; out0             ;
+; |szznew|counter24:U5|Add0~3                   ; |szznew|counter24:U5|Add0~3                   ; out0             ;
+; |szznew|counter24:U5|Add0~4                   ; |szznew|counter24:U5|Add0~4                   ; out0             ;
+; |szznew|counter6:U4|Add0~3                    ; |szznew|counter6:U4|Add0~3                    ; out0             ;
+; |szznew|counter6:U4|Add0~4                    ; |szznew|counter6:U4|Add0~4                    ; out0             ;
+; |szznew|counter6:U2|Add0~3                    ; |szznew|counter6:U2|Add0~3                    ; out0             ;
+; |szznew|counter6:U2|Add0~4                    ; |szznew|counter6:U2|Add0~4                    ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~3        ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~3        ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~4        ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~4        ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~5        ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~5        ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~6        ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~6        ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~7        ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~7        ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~8        ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~8        ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~9        ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~9        ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~10       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~10       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~11       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~11       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~12       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~12       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~13       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~13       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~14       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~14       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~15       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~15       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~16       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~16       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~17       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~17       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~18       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~18       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~19       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~19       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~20       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~20       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~21       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~21       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~22       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~22       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~23       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~23       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~24       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~24       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~25       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~25       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~26       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~26       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~27       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~27       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~28       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~28       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~29       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~29       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~30       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~30       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~31       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~31       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~32       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~32       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~33       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~33       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~34       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~34       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~35       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~35       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~36       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~36       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~37       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~37       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~38       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~38       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~39       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~39       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~40       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~40       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~41       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~41       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~42       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~42       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~43       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~43       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~44       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~44       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~45       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~45       ; out0             ;
+; |szznew|Divier_50MHz_2Hz:comb_3|Add0~46       ; |szznew|Divier_50MHz_2Hz:comb_3|Add0~46       ; out0             ;
+; |szznew|_4bitComparer:SU6|Equal0~3            ; |szznew|_4bitComparer:SU6|Equal0~3            ; out0             ;
+; |szznew|_4bitComparer:SU4|Equal0~2            ; |szznew|_4bitComparer:SU4|Equal0~2            ; out0             ;
+; |szznew|_4bitComparer:SU4|Equal0~3            ; |szznew|_4bitComparer:SU4|Equal0~3            ; out0             ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Thu May 25 08:54:28 2017
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off szznew -c szznew
+Info: Using vector source file "D:/32bit/szznew/szznew.vwf"
+Warning: Can't find signal in vector source file for input pin "|szznew|Adj_Min_key"
+Warning: Can't find signal in vector source file for input pin "|szznew|Adj_Hour_key"
+Warning: Can't find signal in vector source file for input pin "|szznew|Set_Min_key"
+Warning: Can't find signal in vector source file for input pin "|szznew|Set_Hr_key"
+Warning: Can't find signal in vector source file for input pin "|szznew|Ctrl_Bell"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      68.47 %
+Info: Number of transitions in simulation is 61490935
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 177 megabytes
+    Info: Processing ended: Thu May 25 08:57:18 2017
+    Info: Elapsed time: 00:02:50
+    Info: Total CPU time (on all processors): 00:02:45
+
+

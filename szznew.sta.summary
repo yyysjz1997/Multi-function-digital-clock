@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup '_1kHzIN'
+Slack : -2.716
+TNS   : -62.169
+
+Type  : Slow 1200mV 85C Model Setup 'Divier_50MHz_2Hz:comb_3|CLk_1HzOut'
+Slack : -2.168
+TNS   : -50.695
+
+Type  : Slow 1200mV 85C Model Hold '_1kHzIN'
+Slack : 0.139
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Divier_50MHz_2Hz:comb_3|CLk_1HzOut'
+Slack : 0.338
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width '_1kHzIN'
+Slack : -3.000
+TNS   : -29.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Divier_50MHz_2Hz:comb_3|CLk_1HzOut'
+Slack : -1.000
+TNS   : -40.000
+
+Type  : Slow 1200mV 0C Model Setup '_1kHzIN'
+Slack : -2.370
+TNS   : -53.607
+
+Type  : Slow 1200mV 0C Model Setup 'Divier_50MHz_2Hz:comb_3|CLk_1HzOut'
+Slack : -1.851
+TNS   : -41.696
+
+Type  : Slow 1200mV 0C Model Hold '_1kHzIN'
+Slack : 0.128
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Divier_50MHz_2Hz:comb_3|CLk_1HzOut'
+Slack : 0.292
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width '_1kHzIN'
+Slack : -3.000
+TNS   : -29.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Divier_50MHz_2Hz:comb_3|CLk_1HzOut'
+Slack : -1.000
+TNS   : -40.000
+
+Type  : Fast 1200mV 0C Model Setup '_1kHzIN'
+Slack : -1.109
+TNS   : -23.010
+
+Type  : Fast 1200mV 0C Model Setup 'Divier_50MHz_2Hz:comb_3|CLk_1HzOut'
+Slack : -0.803
+TNS   : -13.918
+
+Type  : Fast 1200mV 0C Model Hold '_1kHzIN'
+Slack : -0.017
+TNS   : -0.017
+
+Type  : Fast 1200mV 0C Model Hold 'Divier_50MHz_2Hz:comb_3|CLk_1HzOut'
+Slack : 0.166
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width '_1kHzIN'
+Slack : -3.000
+TNS   : -30.456
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Divier_50MHz_2Hz:comb_3|CLk_1HzOut'
+Slack : -1.000
+TNS   : -40.000
+
+------------------------------------------------------------
